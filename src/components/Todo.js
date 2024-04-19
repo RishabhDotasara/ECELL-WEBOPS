@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { FaTasks } from "react-icons/fa";
+import FileComponent from './FileComponent';
 
 export default function Todo() {
     const [todos,setTodos] = useState([
@@ -22,10 +23,7 @@ export default function Todo() {
         <div className="todos-todo">
             {todos.map((todo)=>{
                 return (
-                    <div className="todo">
-                        <span className='title'>{todo.title}</span>
-                        <span className='by'>{todo.by}</span>
-                    </div>
+                    <FileComponent title={todo.title} by={todo.by}/>
                 )
             })}
       </div>

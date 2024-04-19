@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { PiFilesFill } from "react-icons/pi";
+import FileComponent from './FileComponent';
 
 export default function Files() {
       
@@ -24,10 +25,7 @@ export default function Files() {
         <div className="files-file">
             {files.map((file)=>{
                 return (
-                    <div className="file">
-                        <span className='title'>{file.title}</span>
-                        <span className='by'>{file.by}</span>
-                    </div>
+                    <FileComponent title={file.title} by={file.by}/>
                 )
             })}
       </div>

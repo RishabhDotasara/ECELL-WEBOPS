@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { IoMdMail } from "react-icons/io";
+import FileComponent from './FileComponent';
 
 
 export default function Mails() {
@@ -21,10 +22,7 @@ export default function Mails() {
       <div className="mail-mails">
             {mails.map((mail)=>{
                 return (
-                    <div className="mail">
-                        <span className='title'>{mail.title}</span>
-                        <span className='by'>{mail.by}</span>
-                    </div>
+                    <FileComponent title={mail.title} by={mail.by}/>
                 )
             })}
       </div>

@@ -3,6 +3,7 @@ import { FaSpotify } from 'react-icons/fa'
 import { BiSkipPrevious } from "react-icons/bi";
 import { FaPlay } from "react-icons/fa";
 import { MdSkipNext } from "react-icons/md";
+import FileComponent from './FileComponent';
 
 export default function SpotifyPanel() {
     const [songs,setSongs] = useState([
@@ -33,10 +34,7 @@ export default function SpotifyPanel() {
       <div className="spp-songs">
             {songs.map((song)=>{
                 return (
-                    <div className="song">
-                        <span className='title'>{song.title}</span>
-                        <span className='by'>{song.by}</span>
-                    </div>
+                    <FileComponent title={song.title} by={song.by}/>
                 )
             })}
       </div>

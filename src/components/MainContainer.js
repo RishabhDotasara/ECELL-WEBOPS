@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import SocialMedia from "./SocialMedia";
 import SpotifyPanel from "./SpotifyPanel";
@@ -10,6 +10,14 @@ import { MdDateRange } from "react-icons/md";
 
 export default function MainContainer() {
   const [file, setFile] = useState(-1);
+  const [datetoday,setDate] = useState();
+
+  
+  useEffect(()=>{
+    const today = new Date();
+    setDate(`${today.getDate()}-${today.getMonth()}-${today.getFullYear()}`);
+  },[])
+
   return (
     <div className="main-container">
       <div className="ent-panel">
@@ -34,7 +42,10 @@ export default function MainContainer() {
         {/* <div className="header">Work</div> */}
         <div className="files-panel"><Files/></div>
         <div className="calender-panel">
-            <div className="calendar-header"><MdDateRange /></div>
+            <div className="calender-header"><MdDateRange style={{backgroundColor:"white"}}/></div>
+            <div className="date-today">
+                {datetoday}
+            </div>
         </div>
         <div className="todos-panel"><Todo/></div>
       </div>
