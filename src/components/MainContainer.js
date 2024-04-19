@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import SocialMedia from "./SocialMedia";
+import SpotifyPanel from "./SpotifyPanel";
 
 
 export default function MainContainer() {
@@ -9,7 +10,9 @@ export default function MainContainer() {
     <div className="main-container">
       <div className="ent-panel">
         {/* <div className="header">Entertainment</div> */}
-        <div className="spotify-panel">Yha spotify aayega</div>
+        <div className="spotify-panel">
+          <SpotifyPanel/>
+        </div>
         <div className="social-media-panel">
             <SocialMedia/>
         </div>
