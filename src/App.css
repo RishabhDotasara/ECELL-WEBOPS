@@ -333,7 +333,8 @@
 }
 
 /* TODO PANEL  */
-.main-container .work-panel .todo-panel
+
+.main-container .work-panel .todos-panel
 {
   flex: 0.5;
   border-radius: 20px;
@@ -341,12 +342,69 @@
   background: var(--comp-color);
 }
 
+.main-container .work-panel .todos-panel .todos-header
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: transparent;
+  flex: 0.1;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+
+.main-container .work-panel .todos-panel .todos-todo{
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  background: transparent;
+  overflow-y: scroll;
+}
+
+.main-container .work-panel .todos-panel .todos-todo::-webkit-scrollbar
+{
+  display: none;
+}
+
+
+
+.main-container .work-panel .todos-panel .todos-todo .todo 
+{
+  background: var(--comp-color);
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: left ;
+  cursor: pointer;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-container .work-panel .todos-panel  .todos-todo .todo .title
+{
+  font-weight: 500;
+  font-size: 1.1rem;
+  background-color: transparent;
+}
+.main-container .work-panel .todos-panel  .todos-todo .todo .by
+{
+  background: transparent;
+  font-size: .8rem;
+}
+
+/* CALENDAR PANEL  */
 .main-container .work-panel .calender-panel
 {
-  flex: 0.5;
+  flex: 0.3;
   border-radius: 20px;
-  padding: 10px;
+  /* padding: 10px; */
   background: var(--comp-color);
   /* color: black; */
 }
+
+
 

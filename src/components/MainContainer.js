@@ -4,6 +4,8 @@ import SocialMedia from "./SocialMedia";
 import SpotifyPanel from "./SpotifyPanel";
 import Mails from "./Mails";
 import Files from "./Files";
+import Todo from "./Todo";
+import { MdDateRange } from "react-icons/md";
 
 
 export default function MainContainer() {
@@ -32,9 +34,9 @@ export default function MainContainer() {
         {/* <div className="header">Work</div> */}
         <div className="files-panel"><Files/></div>
         <div className="calender-panel">
-           
+            <div className="calendar-header"><MdDateRange /></div>
         </div>
-        <div className="todo-panel">Todo</div>
+        <div className="todos-panel"><Todo/></div>
       </div>
     </div>
   );
