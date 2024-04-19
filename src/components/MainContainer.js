@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import SocialMedia from "./SocialMedia";
 import SpotifyPanel from "./SpotifyPanel";
+import Mails from "./Mails";
+import Files from "./Files";
 
 
 export default function MainContainer() {
@@ -16,7 +18,7 @@ export default function MainContainer() {
         <div className="social-media-panel">
             <SocialMedia/>
         </div>
-        <div className="mails-panel">mails</div>
+        <div className="mails-panel"><Mails/></div>
       </div>
       <div className="working-area">
         {file !== -1 && (
@@ -28,7 +30,7 @@ export default function MainContainer() {
       </div>
       <div className="work-panel">
         {/* <div className="header">Work</div> */}
-        <div className="files-panel">Files</div>
+        <div className="files-panel"><Files/></div>
         <div className="calender-panel">
            
         </div>

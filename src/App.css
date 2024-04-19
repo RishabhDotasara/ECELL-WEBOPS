@@ -24,7 +24,7 @@
 
 .main-container
 {
-  /* background: var(--bg-color); */
+  /* background: red; */
   height: 98%;
   width: 99%;
   border-radius: 20px;
@@ -58,7 +58,7 @@
 
 .main-container .ent-panel .spotify-panel
 {
-  flex: 0.5;
+  flex: 0.4;
   border-radius: 20px;
   padding: 10px;
   background: var(--comp-color);
@@ -96,7 +96,6 @@
 .main-container .ent-panel .spotify-panel .spp-songs .song 
 {
   background: var(--comp-color);
-  cursor: pointer;
   display: flex;
   padding: 10px;
   border-radius: 10px;
@@ -165,8 +164,60 @@
   border-radius: 20px;
   padding: 10px;
   background: var(--comp-color);
+  display: flex;
+  flex-direction: column;
 }
 
+.main-container .ent-panel .mails-panel .mail-header
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: transparent;
+  flex: 0.1;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.main-container .ent-panel .mails-panel .mail-mails
+{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  background: transparent;
+  overflow-y: scroll;
+  flex: 0.8;
+}
+.main-container .ent-panel .mails-panel .mail-mails::-webkit-scrollbar
+{
+  display: none;
+}
+
+.main-container .ent-panel .mails-panel .mail-mails .mail 
+{
+  background: var(--comp-color);
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: left ;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-container .ent-panel .mails-panel .mail-mails .mail .title
+{
+  font-weight: 500;
+  font-size: 1.1rem;
+  background-color: transparent;
+}
+.main-container .ent-panel .mails-panel .mail-mails .mail .by
+{
+  background: transparent;
+  font-size: .8rem;
+}
 
 /* WORKING AREA  */
 
@@ -227,6 +278,61 @@
   background: var(--comp-color);
 }
 
+.main-container .work-panel .files-panel .files-header
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: transparent;
+  flex: 0.1;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+
+.main-container .work-panel .files-panel .files-file{
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  background: transparent;
+  overflow-y: scroll;
+}
+
+.main-container .work-panel .files-panel .files-file::-webkit-scrollbar
+{
+  display: none;
+}
+
+
+
+.main-container .work-panel .files-panel .files-file .file 
+{
+  background: var(--comp-color);
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: left ;
+  cursor: pointer;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-container .work-panel .files-panel  .files-file .file .title
+{
+  font-weight: 500;
+  font-size: 1.1rem;
+  background-color: transparent;
+}
+.main-container .work-panel .files-panel  .files-file .file .by
+{
+  background: transparent;
+  font-size: .8rem;
+}
+
+/* TODO PANEL  */
 .main-container .work-panel .todo-panel
 {
   flex: 0.5;
