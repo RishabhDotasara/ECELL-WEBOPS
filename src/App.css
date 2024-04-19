@@ -68,11 +68,27 @@
 {
   flex: 0.1;
   border-radius: 20px;
-  padding: 10px;
+  padding: 10px 12px;
   background: var(--comp-color);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.main-container .ent-panel .todo-panel
+.main-container .ent-panel .social-media-panel .sm-links
+{
+  padding: 5px 10px;
+  /* border-radius: 50%; */
+  display: flex;
+  background-color: transparent;
+  cursor: pointer;
+  transform: scale(1.4);
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container .ent-panel .mails-panel
 {
   flex: 0.5;
   border-radius: 20px;
@@ -92,7 +108,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* padding: 5px; */
+  /* padding: 5px; */ 
   align-items: center;
   justify-content: center;
 }
@@ -140,7 +156,7 @@
   background: var(--comp-color);
 }
 
-.main-container .work-panel .mails-panel
+.main-container .work-panel .todo-panel
 {
   flex: 0.5;
   border-radius: 20px;
@@ -154,4 +170,6 @@
   border-radius: 20px;
   padding: 10px;
   background: var(--comp-color);
+  /* color: black; */
 }
+
