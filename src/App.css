@@ -1,16 +1,17 @@
+
+:root 
+{
+  --comp-color: white;
+  --bg-color:rgb(231, 230, 230);
+}
+
 *
 {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
-  background: grey;
-}
-
-:root 
-{
-  --comp-color: white;
-  --bg-color:rgb(231, 230, 230);
+  background: var(--bg-color);
 }
 .App 
 {
@@ -23,7 +24,7 @@
 
 .main-container
 {
-  background: var(--bg-color);
+  /* background: var(--bg-color); */
   height: 98%;
   width: 99%;
   border-radius: 20px;
@@ -80,24 +81,30 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
+/* WORKING AREA  */
 
 .main-container .working-area
 {
   flex: 0.6;
-  background: yellow;
-  margin: 5px;
+  background: var(--comp-color);
+  margin: 10px 0;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* padding: 5px; */
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container .working-area .filler
+{
+  font-size: 2.5rem;
+  font-weight:bold;
+  background: transparent;
+  color: rgb(219, 217, 217);
+  user-select: none;
+
 }
 
 /* WORK PANEL  */
@@ -134,6 +141,14 @@
 }
 
 .main-container .work-panel .mails-panel
+{
+  flex: 0.5;
+  border-radius: 20px;
+  padding: 10px;
+  background: var(--comp-color);
+}
+
+.main-container .work-panel .calender-panel
 {
   flex: 0.5;
   border-radius: 20px;
