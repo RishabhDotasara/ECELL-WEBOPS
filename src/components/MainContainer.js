@@ -13,7 +13,7 @@ export default function MainContainer() {
   const [file, setFile] = useState(-1);
   const [datetoday, setDate] = useState();
   const [entact, setEntAct] = useState(false);
-  const [wrkact, setWrkAct] = useState(true);
+  const [wrkact, setWrkAct] = useState(false);
 
   useEffect(() => {
     const today = new Date();
@@ -27,6 +27,7 @@ export default function MainContainer() {
         onClick={() => {
           setEntAct(!entact);
         }}
+        style={{transform:entact ? 'rotateY(180deg)': ''}}
       >
         <FaArrowRight style={{ backgroundColor: "transparent"}} />
       </button>
@@ -35,6 +36,7 @@ export default function MainContainer() {
         onClick={() => {
           setWrkAct(!wrkact);
         }}
+        style={{transform:wrkact ? 'rotateY(-180deg)': ''}}  
       >
         <FaArrowLeft style={{ backgroundColor: "transparent" }} />
       </button>

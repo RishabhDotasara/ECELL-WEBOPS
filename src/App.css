@@ -367,7 +367,7 @@
 
 .btn
 {
-  background: var(--comp-color);
+  background:transparent;
   height: fit-content;
   width: fit-content;
   padding: 10px;
@@ -376,7 +376,7 @@
   border-radius: 10px;
   position: absolute;
   font-size: 1.5rem;
-  z-index: 9;
+  z-index: 99;
   display: none;
 }
 
@@ -406,13 +406,14 @@
       left: -1000px;
       height: 100%;
       width: 100%;
-
+      z-index: 9;
       
     }
+    
     .btn 
     {
       display: block;
-      transform: scale(1.5);
+      transform: scale(1.2);
     }
     .main-container .work-panel .calender-panel .date-today
     {
