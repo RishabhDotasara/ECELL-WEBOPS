@@ -1,1 +1,1 @@
-## Dashboard made using React.
+## Dashboard for ECELL applications.
