@@ -54,6 +54,7 @@
   width: 99%;
   border-radius: 20px;
   /* padding: 10px; */
+  position: relative  ;
   display: flex;
 }
 
@@ -364,5 +365,71 @@
   font-weight: 500;
 }
 
+.btn
+{
+  background: var(--comp-color);
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  position: absolute;
+  font-size: 1.5rem;
+  z-index: 9;
+  display: none;
+}
 
+.btn:hover 
+{
+  background: rgb(232, 232, 232);
+}
 
+.ent-panel-btn
+{
+  left: 20px;
+  top: 20px;
+}
+
+.work-panel-btn
+{
+  right: 20px;
+  top: 20px;
+}
+@media only screen and (max-width:1000px)  {
+  
+    .main-container .work-panel
+    {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: -1000px;
+      height: 100%;
+      width: 100%;
+
+      
+    }
+    .btn 
+    {
+      display: block;
+      transform: scale(1.5);
+    }
+    .main-container .work-panel .calender-panel .date-today
+    {
+      font-size: 2rem;
+    }
+    .main-container .ent-panel 
+    { 
+      display: none;
+      position: absolute;
+      top: 0;
+      right: -1000px;
+      height: 100%;
+      width: 100%;
+      transition: 0.2s all ease-in-out;
+    }
+    .main-container .working-area 
+    {
+      flex: 1;
+    }
+}
