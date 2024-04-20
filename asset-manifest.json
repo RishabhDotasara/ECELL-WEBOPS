@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ECELL-WEBOPS-DASHBOARD/static/css/main.df1663fe.css",
-    "main.js": "/ECELL-WEBOPS-DASHBOARD/static/js/main.49a9c56f.js",
+    "main.css": "/ECELL-WEBOPS-DASHBOARD/static/css/main.28ed7b8b.css",
+    "main.js": "/ECELL-WEBOPS-DASHBOARD/static/js/main.eda8a0bd.js",
     "static/js/453.59b8a61b.chunk.js": "/ECELL-WEBOPS-DASHBOARD/static/js/453.59b8a61b.chunk.js",
     "static/media/logo.svg": "/ECELL-WEBOPS-DASHBOARD/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/ECELL-WEBOPS-DASHBOARD/index.html",
-    "main.df1663fe.css.map": "/ECELL-WEBOPS-DASHBOARD/static/css/main.df1663fe.css.map",
-    "main.49a9c56f.js.map": "/ECELL-WEBOPS-DASHBOARD/static/js/main.49a9c56f.js.map",
+    "main.28ed7b8b.css.map": "/ECELL-WEBOPS-DASHBOARD/static/css/main.28ed7b8b.css.map",
+    "main.eda8a0bd.js.map": "/ECELL-WEBOPS-DASHBOARD/static/js/main.eda8a0bd.js.map",
     "453.59b8a61b.chunk.js.map": "/ECELL-WEBOPS-DASHBOARD/static/js/453.59b8a61b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.df1663fe.css",
-    "static/js/main.49a9c56f.js"
+    "static/css/main.28ed7b8b.css",
+    "static/js/main.eda8a0bd.js"
   ]
 }
